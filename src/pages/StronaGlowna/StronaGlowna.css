@@ -1,6 +1,7 @@
 .stronaglowna {
   padding: 20px;
   background-color: #fff3e0;
+  text-align: center;
 }
 
 .stronaglowna h1 {
@@ -9,4 +10,12 @@
 
 .stronaglowna p {
   font-size: 16px;
+}
+
+.content-section {
+  padding: 20px;
+  background-color: white;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

@@ -26,32 +26,32 @@ const Menu = ({ items }) => {
   const $items = useRef(items.map(createRef));
   const [active, setActive] = useState(0);
 
-  const animate = () => {
-    const menuOffset = $root.current.getBoundingClientRect();
-    const activeItem = $items.current[active].current;
-    const { width, height, top, left } = activeItem.getBoundingClientRect();
+  useEffect(() => {
+    const animate = () => {
+      const menuOffset = $root.current.getBoundingClientRect();
+      const activeItem = $items.current[active].current;
+      const { width, height, top, left } = activeItem.getBoundingClientRect();
 
-    const settings = {
-      x: left - menuOffset.x,
-      y: top - menuOffset.y,
-      width: width,
-      height: height,
-      backgroundColor: items[active].color,
-      ease: 'elastic.out(.7, .7)',
-      duration: .8
+      const settings = {
+        x: left - menuOffset.x,
+        y: top - menuOffset.y,
+        width: width,
+        height: height,
+        backgroundColor: items[active].color,
+        ease: 'elastic.out(.7, .7)',
+        duration: .8
+      };
+
+      gsap.to($indicator1.current, settings);
+      gsap.to($indicator2.current, { ...settings, duration: 1 });
     };
 
-    gsap.to($indicator1.current, settings);
-    gsap.to($indicator2.current, { ...settings, duration: 1 });
-  };
-
-  useEffect(() => {
     animate();
     window.addEventListener('resize', animate);
     return () => {
       window.removeEventListener('resize', animate);
     };
-  }, [active]);
+  }, [active, items]);
 
   return (
     <div ref={$root} className="menu">

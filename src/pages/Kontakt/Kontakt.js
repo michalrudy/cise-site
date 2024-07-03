@@ -1,11 +1,18 @@
-import React from 'react';
-import './kontakt.css';
+import React, { useEffect, useState } from 'react';
+import './Kontakt.css';
 
 const Kontakt = () => {
+  const [content, setContent] = useState('');
+
+  useEffect(() => {
+    fetch('/Kontakt.html')
+      .then(response => response.text())
+      .then(data => setContent(data));
+  }, []);
+
   return (
     <div className="kontakt">
-      <h1>Kontakt</h1>
-      <p>Witamy na stronie kontaktu!</p>
+      <div className="content-section" dangerouslySetInnerHTML={{ __html: content }} />
     </div>
   );
 };
