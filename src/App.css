@@ -92,7 +92,7 @@ body {
   color: yellow;
 }
 
-.high-contrast .onas, .high-contrast .stronaglowna, .high-contrast .doswiadczenie, .high-contrast .projekty, .high-contrast .aktualnosci, .high-contrast .kontakt {
+.high-contrast .onas, .high-contrast .stronaglowna, .high-contrast .projekty, .high-contrast .aktualnosci, .high-contrast .kontakt {
   background-color: black;
   color: yellow;
 }

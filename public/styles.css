@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    background-color: #f4a261;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section {
+    padding: 40px 20px;
+    background-color: #ffffff;
+  }
+  
+  .section.about {
+    background-color: #ffffff;
+  }
+  
+  .section.preview {
+    background-color: #fafafa;
+  }
+  
+  .section.author {
+    background-color: #f4a261;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container .image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .container .image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .container .text {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .container .text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .container .text h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .container .text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .section.preview .content {
+    display: flex;
+  }
+  
+  .section.preview .sidebar {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .section.preview .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section.preview .sidebar ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .section.preview .main-content {
+    flex: 2;
+    padding: 20px;
+  }
+  
+  .section.preview .main-content h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .section.preview .main-content p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .section.preview .main-content blockquote {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-left: 5px solid #00796b;
+  }
+  
+  .section.preview .main-content blockquote p {
+    margin: 0;
+    font-style: italic;
+    font-size: 16px;
+  }
+  

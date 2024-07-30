@@ -1,13 +1,97 @@
 .onas {
   padding: 20px;
-  background-color: #ffebee;
+  background-color: #c9daf8;
 }
 
-.content-section {
-  padding: 25px;
-  background-color: white;
-  margin: 20px auto;
-  max-width: 1200px;
+.onas h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.onas p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-size: var(--font-size, 18px); /* Default font size */
+  overflow: hidden;
+}
+
+.section .text {
+  padding: 20px;
+}
+
+.section .text .badge {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: #fff;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.section .text h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section .text p {
+  margin: 0 0 20px;
+}
+
+.section .text ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.section .text ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.section .text ul li svg {
+  margin-right: 10px;
+}
+
+.section .image {
+  width: 100%;
+  height: 200px;
+  background-color: #f4f4f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section .image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .sections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sections {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

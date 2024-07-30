@@ -4,15 +4,14 @@ import './App.css';
 import './Menu.css';
 import { gsap } from 'gsap';
 import StronaGlowna from './pages/StronaGlowna/StronaGlowna';
-import Doswiadczenie from './pages/Doswiadczenie/Doswiadczenie';
 import Projekty from './pages/Projekty/Projekty';
 import Aktualnosci from './pages/Aktualnosci/Aktualnosci';
 import Kontakt from './pages/Kontakt/Kontakt';
 import ONas from './pages/O_nas/ONas';
+import Footer from './components/Footer';
 
 const items = [
   { name: "Strona Główna", color: "#f44336", href: "/" },
-  { name: "Doświadczenie", color: "#e91e63", href: "/doswiadczenie" },
   { name: "Projekty", color: "#9c27b0", href: "/projekty" },
   { name: "Aktualności", color: "#673ab7", href: "/aktualnosci" },
   { name: "Kontakt", color: "#3f51b5", href: "/kontakt" },
@@ -95,13 +94,13 @@ const App = () => {
       <main>
         <Routes>
           <Route path="/" element={<StronaGlowna />} />
-          <Route path="/doswiadczenie" element={<Doswiadczenie />} />
           <Route path="/projekty" element={<Projekty />} />
           <Route path="/aktualnosci" element={<Aktualnosci />} />
           <Route path="/kontakt" element={<Kontakt />} />
           <Route path="/onas" element={<ONas />} />
         </Routes>
       </main>
+      <Footer />
     </div>
   );
 };
