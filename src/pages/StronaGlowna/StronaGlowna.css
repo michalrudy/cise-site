@@ -1,21 +1,29 @@
-.stronaglowna {
-  padding: 20px;
-  background-color: #fff3e0;
+.strona-glowna {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
   text-align: center;
 }
 
-.stronaglowna h1 {
-  color: #ff9800;
+.background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 
-.stronaglowna p {
-  font-size: 16px;
-}
-
-.content-section {
+.content {
+  position: relative;
+  z-index: 1;
   padding: 20px;
-  background-color: white;
-  margin: 20px auto;
-  max-width: 1200px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }

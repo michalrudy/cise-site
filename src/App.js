@@ -8,7 +8,7 @@ import Projekty from './pages/Projekty/Projekty';
 import Aktualnosci from './pages/Aktualnosci/Aktualnosci';
 import Kontakt from './pages/Kontakt/Kontakt';
 import ONas from './pages/O_nas/ONas';
-import Footer from './components/Footer';
+import Footer from './components/Footer'; // Import Footer
 
 const items = [
   { name: "Strona Główna", color: "#f44336", href: "/" },
